@@ -1,0 +1,5 @@
+edu\gvsu\cis\cis656\lab2\client\ChatClient.class
+edu\gvsu\cis\cis656\lab2\RegistrationInfo.class
+edu\gvsu\cis\cis656\lab2\PresenceService.class
+edu\gvsu\cis\cis656\lab2\impl\PresenceServiceImpl.class
+edu\gvsu\cis\cis656\lab2\ClientService.class
