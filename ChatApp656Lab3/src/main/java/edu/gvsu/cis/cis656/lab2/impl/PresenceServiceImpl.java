@@ -96,8 +96,8 @@ public class PresenceServiceImpl implements PresenceService, Serializable {
 	           // System.setProperty("java.rmi.server.hostname", "127.0.0.1");
 	            PresenceService stub =
 	                    (PresenceService) UnicastRemoteObject.exportObject(engine, port);
-	            registry = LocateRegistry.getRegistry();
-	            //registry = LocateRegistry.createRegistry(port);
+	           registry = LocateRegistry.getRegistry();
+	           // registry = LocateRegistry.createRegistry(port);
 	            registry.rebind(name, stub);
 	            context = ZMQ.context(1);
 	    		publisher = context.socket(ZMQ.PUB);

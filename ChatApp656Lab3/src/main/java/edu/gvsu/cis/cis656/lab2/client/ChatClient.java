@@ -23,6 +23,7 @@ public class ChatClient extends UnicastRemoteObject implements Runnable,Serializ
 	static String x;
 	
 	static String currentUser;
+	static String status = "available";
 	
 	public static void main(String args[]){
 		currentUser = args[0];
@@ -33,7 +34,7 @@ public class ChatClient extends UnicastRemoteObject implements Runnable,Serializ
         
         try {        
         	String name = "PresenceService";
-            Registry registry = LocateRegistry.getRegistry("127.0.0.1");
+            Registry registry = LocateRegistry.getRegistry(1099);
             PresenceService ps = (PresenceService) registry.lookup(name);
             
             if(args.length > 1) {
@@ -64,7 +65,7 @@ public class ChatClient extends UnicastRemoteObject implements Runnable,Serializ
 		            		        while (!Thread.currentThread().isInterrupted()) {
 		            		        	 String recdText = subscriber.recvStr();
 		            		        	 String frmUser = recdText.substring(0, recdText.indexOf(":"));
-		            		        	 if(!frmUser.equals(currentUser)) {
+		            		        	 if((!frmUser.equals(currentUser)) && !status.equalsIgnoreCase("busy")) {
 		            		        		 String msg = recdText.substring(recdText.indexOf(":")+1);
 		            		        		 System.out.println("Broadcast message : "+msg);
 		            		        	 }
@@ -123,6 +124,7 @@ public class ChatClient extends UnicastRemoteObject implements Runnable,Serializ
 	                    	if(currentUser.getStatus()==true){
 	                    		currentUser.setStatus(false);
 	                    		ps.updateRegistrationInfo(currentUser);
+	                    		status = "busy";
 	                    	}
 	                    	else System.out.println("Your status is already unavailable");
 	                    	
@@ -131,6 +133,7 @@ public class ChatClient extends UnicastRemoteObject implements Runnable,Serializ
 	                    	if(currentUser.getStatus()==false){
 	                    		currentUser.setStatus(true);
 	                    		ps.updateRegistrationInfo(currentUser);
+	                    		status = "available";
 	                    	}
 	                    	else System.out.println("You are already online");
 	                    	

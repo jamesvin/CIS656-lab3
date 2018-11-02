@@ -18,7 +18,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\vinee\AppData\Local\Temp\surefire6576335199700021338\surefirebooter5771271160467455134.jar C:\Users\vinee\AppData\Local\Temp\surefire6576335199700021338 2018-10-25T16-02-18_630-jvmRun1 surefire204757132177314574tmp surefire_04015723015191114806tmp"/>
+    <property name="sun.java.command" value="C:\Users\vinee\AppData\Local\Temp\surefire2573894025034245302\surefirebooter7859757723284764294.jar C:\Users\vinee\AppData\Local\Temp\surefire2573894025034245302 2018-11-01T15-46-27_776-jvmRun1 surefire5116797074480383004tmp surefire_02527215309857949793tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\vinee\Documents\eclipse\workspace\ChatApp656Lab3\target\test-classes;C:\Users\vinee\Documents\eclipse\workspace\ChatApp656Lab3\target\classes;C:\Users\vinee\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\vinee\.m2\repository\org\zeromq\jeromq\0.3.4\jeromq-0.3.4.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\vinee"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\vinee\AppData\Local\Temp\surefire6576335199700021338\surefirebooter5771271160467455134.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\vinee\AppData\Local\Temp\surefire2573894025034245302\surefirebooter7859757723284764294.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_151\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,5 +60,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testApp" classname="edu.gvsu.cis656.ChatApp656Lab3.AppTest" time="0.001"/>
+  <testcase name="testApp" classname="edu.gvsu.cis656.ChatApp656Lab3.AppTest" time="0.002"/>
 </testsuite>
